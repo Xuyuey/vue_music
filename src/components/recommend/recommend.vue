@@ -47,8 +47,9 @@
                 })
             },
             _getDiscList(){
+                console.log('yue')
                 getDiscList().then((res)=>{         
-                    if(res.code===ERR_OK){
+                    if(res.code === ERR_OK){
                         console.log(res.data)
                     }
                 })
