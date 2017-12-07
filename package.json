@@ -5,13 +5,15 @@
   "author": "徐玥 <xuyue_ustb@163.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "dev": "node build/dev-server.js",
+    "start": "node build/dev-server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "babel-runtime": "^6.26.0",
+    "better-scroll": "^1.5.5",
     "fastclick": "^1.0.6",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
